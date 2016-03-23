@@ -8,10 +8,10 @@ namespace CleanCode.SolidPrinciples
 {
     public class Observer
     {
-        public bool Observe(ObservationPlace place)
+        public bool Observe(Place place)
         {
            
-            int result = place.LengthOfIngoredSigns(InputData.ignoredCase[place.Type],InputData.enviromentSounds[place.Type]);
+            int result = place.LengthOfIngoredSigns();
             
             return (result > 0);
             
