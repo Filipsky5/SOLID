@@ -17,7 +17,7 @@ namespace CleanCode.SolidPrinciples
             this.laughSound = laughSound;
         }
         
-        public generate() {
+        public string generate() {
             return string.Concat(Enumerable.Repeat(this.laughSound, this.numberOfTimes));
         }    
     }
