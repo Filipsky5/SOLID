@@ -31,4 +31,24 @@ namespace CleanCode.SolidPrinciples
             return _references.Sum(r => Regex.Matches(inputString.ToLower(), Regex.Escape(r.ToLower())).Count);
         }
     }
+
+    class Laugh {
+        private string laughSound;
+        public Laugh(string sound) {
+            laughSound = sound;
+        }
+        public string generate(int nrOfTimes) {
+            return string.Concat(Enumerable.Repeat(laughSound, nrOfTimes));
+        }
+    }
+
+    class RefCounter {
+        private string[] references;
+        public RefCounter(params string[] refs) {
+            references = refs;
+        }
+        public int count(string inputString) {
+            return references.Sum(r => Regex.Matches(inputString.ToLower(), Regex.Escape(r.ToLower())).Count);
+        }
+    }
 }
