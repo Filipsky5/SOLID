@@ -14,8 +14,6 @@ namespace CleanCode.SolidPrinciples
         public static Dictionary<PlaceType, string> enviromentSounds = new Dictionary<PlaceType, string> {
             {PlaceType.Forest,"<Forest Sounds>"},{PlaceType.Ocean, "bul bul bul"}
         };
-
-
 }
     
      
