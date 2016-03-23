@@ -7,6 +7,24 @@ using System.Threading.Tasks;
 
 namespace CleanCode.SolidPrinciples
 {
+    class LaughtSound
+    {
+        private string laught;
+        private int count;
+
+        private string generateLaught(string laught, int count)
+        {
+            this.laught = laught;
+            this.count = count;
+            return string.Concat(Enumerable.Repeat(laught, count));
+        }
+    }
+
+    class HolidayCount
+    {
+
+    }
+
     class StringHolidaysUtils
     {
         private string _laughSound;
