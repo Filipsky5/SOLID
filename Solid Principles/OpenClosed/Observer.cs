@@ -11,12 +11,9 @@ namespace CleanCode.SolidPrinciples
         public bool Observe(ObservationPlace place)
         {
            
-            int result = place.LengthOfIngoredSigns(InputData.ignoredCase[place.Type],InputData.enviromentSounds[place.Type]);
+            int result = place.LengthOfIngoredSigns();
             
-            return (result > 0);
-            
-                   
-            
+            return (result > 0); 
         }
     }
 }
