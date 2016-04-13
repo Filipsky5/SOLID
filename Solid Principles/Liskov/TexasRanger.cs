@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace CleanCode.SolidPrinciples.Liskov
 {
-    class TexasRanger : Walker
+    class TexasRanger
     {
         public void DoRoundHouseKick()
         {
             Console.WriteLine("Hyiaa!");
         }
 
-        public override void Walk()
+        public void Walk()
         {
             throw new Exception("Chuck Norris doesn't walk - the earth moves beneath him");
         }
